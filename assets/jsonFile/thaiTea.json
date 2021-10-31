@@ -1,0 +1,329 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.ohhowcivilized.com/#organization",
+            "name": "Oh, How Civilized",
+            "url": "https://www.ohhowcivilized.com/",
+            "sameAs": [
+                "https://www.facebook.com/OhHowCivilized/",
+                "https://www.instagram.com/ohhowcivilized/",
+                "https://www.youtube.com/channel/UCw6c6Jb1QK81C6lJOC4CdGQ",
+                "https://www.pinterest.com/ohhowcivilized/",
+                "https://twitter.com/ohhowcivilized"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.ohhowcivilized.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.ohhowcivilized.com/wp-content/uploads/OHC-logo-1000.png",
+                "contentUrl": "https://www.ohhowcivilized.com/wp-content/uploads/OHC-logo-1000.png",
+                "width": 1000,
+                "height": 1000,
+                "caption": "Oh, How Civilized"
+            },
+            "image": {
+                "@id": "https://www.ohhowcivilized.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.ohhowcivilized.com/#website",
+            "url": "https://www.ohhowcivilized.com/",
+            "name": "Oh, How Civilized",
+            "description": "Tea made easy and delicious.",
+            "publisher": {
+                "@id": "https://www.ohhowcivilized.com/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.ohhowcivilized.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-7.jpg",
+            "contentUrl": "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-7.jpg",
+            "width": 1200,
+            "height": 1800
+        },
+        {
+            "@type": [
+                "WebPage",
+                "FAQPage"
+            ],
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#webpage",
+            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/",
+            "name": "Decadent Thai Iced Tea - Oh, How Civilized",
+            "isPartOf": {
+                "@id": "https://www.ohhowcivilized.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#primaryimage"
+            },
+            "datePublished": "2020-07-07T17:48:00+00:00",
+            "dateModified": "2021-06-06T18:16:01+00:00",
+            "description": "This delicious Thai iced tea recipe is even better than the ones you've had at Thai restaurants! It's sweet, creamy, and decadent!",
+            "breadcrumb": {
+                "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#breadcrumb"
+            },
+            "mainEntity": [
+                {
+                    "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144302806"
+                },
+                {
+                    "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144351409"
+                },
+                {
+                    "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1622956644726"
+                }
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.ohhowcivilized.com/best-thai-iced-tea/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.ohhowcivilized.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Tea Recipes",
+                    "item": "https://www.ohhowcivilized.com/category/tea-recipe/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Decadent Thai Iced Tea"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#article",
+            "isPartOf": {
+                "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#webpage"
+            },
+            "author": {
+                "@id": "https://www.ohhowcivilized.com/#/schema/person/e6eee3d381abe7855bf4e8a83c242062"
+            },
+            "headline": "Decadent Thai Iced Tea",
+            "datePublished": "2020-07-07T17:48:00+00:00",
+            "dateModified": "2021-06-06T18:16:01+00:00",
+            "wordCount": 1042,
+            "commentCount": 9,
+            "publisher": {
+                "@id": "https://www.ohhowcivilized.com/#organization"
+            },
+            "image": {
+                "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-7.jpg",
+            "keywords": [
+                "Iced Tea",
+                "Most Popular"
+            ],
+            "articleSection": [
+                "Tea Recipes"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.ohhowcivilized.com/best-thai-iced-tea/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.ohhowcivilized.com/#/schema/person/e6eee3d381abe7855bf4e8a83c242062",
+            "name": "Jee Choe"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144302806",
+            "position": 1,
+            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144302806",
+            "name": "Is there caffeine in this drink?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, there's caffeine in the black tea so there's caffeine in this drink.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144351409",
+            "position": 2,
+            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1594144351409",
+            "name": "What makes Thai iced tea so orange?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The bright\u00a0orange color is from the red and yellow food coloring that's in the Thai tea\u00a0mix.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Question",
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1622956644726",
+            "position": 3,
+            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#faq-question-1622956644726",
+            "name": "Can I make this without freezing the condensed milk and evaporated milk?",
+            "answerCount": 1,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Just stir the two together and pour it into the tea. I freeze the two and whisk so that the drink has a nice, rich frothy topping.",
+                "inLanguage": "en-US"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "Decadent Thai Iced Tea",
+            "author": {
+                "@type": "Person",
+                "name": "Jee Choe"
+            },
+            "description": "A sweet and refreshing Thai iced tea recipe you can easily make at home.",
+            "datePublished": "2020-07-07T13:48:00+00:00",
+            "image": [
+                "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-recipe.jpg",
+                "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-recipe-500x500.jpg",
+                "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-recipe-500x375.jpg",
+                "https://www.ohhowcivilized.com/wp-content/uploads/thai-iced-tea-recipe-480x270.jpg"
+            ],
+            "recipeYield": [
+                "2",
+                "2 servings (16 ounces)"
+            ],
+            "prepTime": "PT25M",
+            "totalTime": "PT30M",
+            "recipeIngredient": [
+                "2 \u00bc cups water",
+                "2 cups ice",
+                "2 tablespoons Thai tea mix",
+                "2 tablespoons brown sugar",
+                "1 tablespoon black tea",
+                "\u00bd cup evaporated milk",
+                "2 tablespoons sweetened condensed milk"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToSection",
+                    "name": "MAKE THAI TEA",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Boil water.Bring water to a boil on the stovetop. If using an\u00a0electric kettle with a temperature setting, set water temperature to 208\u00b0F. Use filtered water if possible.",
+                            "name": "Boil water.Bring water to a boil on the stovetop. If using an\u00a0electric kettle with a temperature setting, set water temperature to 208\u00b0F. Use filtered water if possible.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-0-0"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Combine Thai tea mix, black tea, sugar, and hot water in a teapot. Cover teapot and steep for 5 minutes.",
+                            "name": "Combine Thai tea mix, black tea, sugar, and hot water in a teapot. Cover teapot and steep for 5 minutes.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-0-1"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Strain tea solids and let tea cool for 30 minutes.",
+                            "name": "Strain tea solids and let tea cool for 30 minutes.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-0-2"
+                        }
+                    ]
+                },
+                {
+                    "@type": "HowToSection",
+                    "name": "MAKE CREAM FROTH TOPPING",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Combine sweetened condensed milk and evaporated milk and freeze for 20 minutes.The milk mixture is ready when you see a crystallized layer forming around the sides.",
+                            "name": "Combine sweetened condensed milk and evaporated milk and freeze for 20 minutes.The milk mixture is ready when you see a crystallized layer forming around the sides.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-1-0"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Whip sweetened milk mixture.Use a\u00a0handheld milk frother\u00a0to whisk until the slightly frozen sweetened milk nearly doubles in volume.",
+                            "name": "Whip sweetened milk mixture.Use a\u00a0handheld milk frother\u00a0to whisk until the slightly frozen sweetened milk nearly doubles in volume.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-1-1"
+                        }
+                    ]
+                },
+                {
+                    "@type": "HowToSection",
+                    "name": "ASSEMBLE DRINK",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Divide each component into two cups. Into cups of ice, pour cooled down tea, and top with milk froth. Stir before drinking.",
+                            "name": "Divide each component into two cups. Into cups of ice, pour cooled down tea, and top with milk froth. Stir before drinking.",
+                            "url": "https://www.ohhowcivilized.com/best-thai-iced-tea/#wprm-recipe-11411-step-2-0"
+                        }
+                    ]
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "ratingCount": "78"
+            },
+            "recipeCategory": [
+                "Drinks"
+            ],
+            "recipeCuisine": [
+                "American",
+                "South African"
+            ],
+            "keywords": "homemade, thai tea",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "196 kcal",
+                "carbohydrateContent": "29 g",
+                "proteinContent": "6 g",
+                "fatContent": "7 g",
+                "saturatedFatContent": "4 g",
+                "cholesterolContent": "25 mg",
+                "sodiumContent": "109 mg",
+                "sugarContent": "29 g",
+                "servingSize": "1 serving"
+            },
+            "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#recipe",
+            "isPartOf": {
+                "@id": "https://www.ohhowcivilized.com/best-thai-iced-tea/#article"
+            },
+            "mainEntityOfPage": "https://www.ohhowcivilized.com/best-thai-iced-tea/#webpage"
+        }
+    ]
+}

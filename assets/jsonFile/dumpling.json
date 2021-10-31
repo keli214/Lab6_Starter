@@ -1,0 +1,248 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.foodiecrush.com/#organization",
+            "name": "foodiecrush.com",
+            "url": "https://www.foodiecrush.com/",
+            "sameAs": [
+                "https://www.facebook.com/FoodieCrush",
+                "https://www.instagram.com/foodiecrush",
+                "https://pinterest.com/foodiecrush/",
+                "https://twitter.com/foodiecrush"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.foodiecrush.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.foodiecrush.com/wp-content/uploads/2015/01/fc_logo.png",
+                "contentUrl": "https://www.foodiecrush.com/wp-content/uploads/2015/01/fc_logo.png",
+                "width": 465,
+                "height": 70,
+                "caption": "foodiecrush.com"
+            },
+            "image": {
+                "@id": "https://www.foodiecrush.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.foodiecrush.com/#website",
+            "url": "https://www.foodiecrush.com/",
+            "name": "foodiecrush",
+            "description": "real good real food for real people",
+            "publisher": {
+                "@id": "https://www.foodiecrush.com/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.foodiecrush.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.foodiecrush.com/wp-content/uploads/2020/11/46-Best-Pasta-Recipes-foodiecrush.com_.jpg",
+            "contentUrl": "https://www.foodiecrush.com/wp-content/uploads/2020/11/46-Best-Pasta-Recipes-foodiecrush.com_.jpg",
+            "width": 600,
+            "height": 900,
+            "caption": "45 Best Pasta Recipes to Make Now foodiecrush.com"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#webpage",
+            "url": "https://www.foodiecrush.com/45-best-pasta-recipes/",
+            "name": "45 BEST Pasta Recipes to Make Now | foodiecrush.com",
+            "isPartOf": {
+                "@id": "https://www.foodiecrush.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#primaryimage"
+            },
+            "datePublished": "2021-10-20T12:00:00+00:00",
+            "dateModified": "2021-10-20T16:04:09+00:00",
+            "description": "From quick and easy pasta recipes to Italian pastas that stick to tradition, this is the list of the 45 BEST pasta recipes to make now.",
+            "breadcrumb": {
+                "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.foodiecrush.com/45-best-pasta-recipes/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.foodiecrush.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "45 Pasta Recipes to Make Now"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#article",
+            "isPartOf": {
+                "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#webpage"
+            },
+            "author": {
+                "@id": "https://www.foodiecrush.com/#/schema/person/9bda81c1504d352621a895bc2aa47544"
+            },
+            "headline": "45 Pasta Recipes to Make Now",
+            "datePublished": "2021-10-20T12:00:00+00:00",
+            "dateModified": "2021-10-20T16:04:09+00:00",
+            "wordCount": 3265,
+            "commentCount": 7,
+            "publisher": {
+                "@id": "https://www.foodiecrush.com/#organization"
+            },
+            "image": {
+                "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.foodiecrush.com/wp-content/uploads/2020/11/46-Best-Pasta-Recipes-foodiecrush.com_.jpg",
+            "keywords": [
+                "dinner",
+                "italian",
+                "pasta",
+                "recipes"
+            ],
+            "articleSection": [
+                "All Recipes",
+                "Cheese",
+                "Chicken and Turkey",
+                "Dinner",
+                "Family Friendly",
+                "Italian Recipes",
+                "Meat and Seafood",
+                "Noodles, Rice and Grains",
+                "Pasta",
+                "Seasonal : Fall",
+                "Seasonal : Spring",
+                "Seasonal : Summer",
+                "Seasonal : Winter"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.foodiecrush.com/45-best-pasta-recipes/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.foodiecrush.com/#/schema/person/9bda81c1504d352621a895bc2aa47544",
+            "name": "Heidi",
+            "description": "Hi! I\u2019m Heidi and I cook real good, real food I hope you\u2019ll love to make, too. Contact | Start Here! | Subscribe",
+            "sameAs": [
+                "https://www.foodiecrush.com"
+            ],
+            "url": "https://www.foodiecrush.com/author/foodieheidi/"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "Quick and Authentic Pasta Pomodoro Sauce",
+            "author": {
+                "@type": "Person",
+                "name": "Heidi"
+            },
+            "description": "Light and easy to make with fresh tomatoes, this simple Southern Italian tomato sauce takes just 20 minutes to make and is a terrific base for many Italian dishes.",
+            "datePublished": "2021-10-20T06:00:00+00:00",
+            "image": [
+                "https://www.foodiecrush.com/wp-content/uploads/2019/07/Pomodoro-Sauce-foodiecrush.com-018.jpg",
+                "https://www.foodiecrush.com/wp-content/uploads/2019/07/Pomodoro-Sauce-foodiecrush.com-018-500x500.jpg",
+                "https://www.foodiecrush.com/wp-content/uploads/2019/07/Pomodoro-Sauce-foodiecrush.com-018-500x375.jpg",
+                "https://www.foodiecrush.com/wp-content/uploads/2019/07/Pomodoro-Sauce-foodiecrush.com-018-480x270.jpg"
+            ],
+            "recipeYield": [
+                "4"
+            ],
+            "prepTime": "PT10M",
+            "cookTime": "PT10M",
+            "totalTime": "PT20M",
+            "recipeIngredient": [
+                "1  pound DeLallo dried pasta such as spaghetti or penne",
+                "1 pound medium size fresh tomatoes, such as campari or cocktail tomatoes",
+                "6 tablespoons DeLallo extra virgin olive oil (divided)",
+                "6 large fresh garlic cloves (of the same size, divided)",
+                "12-15  basil leaves",
+                "1 1/2 tablespoons kosher salt"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Begin cooking the pasta noodles in boiling water seasoned with 1 tablespoon kosher salt for approximately 5 minutes. *NOTE: Reserve 2 cups of the pasta water to add to the sauce later. While the pasta is cooking, start the sauce.",
+                    "name": "Begin cooking the pasta noodles in boiling water seasoned with 1 tablespoon kosher salt for approximately 5 minutes. *NOTE: Reserve 2 cups of the pasta water to add to the sauce later. While the pasta is cooking, start the sauce.",
+                    "url": "https://www.foodiecrush.com/45-best-pasta-recipes/#wprm-recipe-41269-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "For the sauce, cut the tomatoes in half, then quarter the halves, and set aside. Heat 3 tablespoons of extra virgin olive oil in a large saut\u00e9 pan over medium high heat, and add three of the garlic cloves to the oil. Tilt the pan so the garlic is immersed in the oil to flavor it as the garlic cooks. Cook until the garlic becomes fragrant and begins to color, then to avoid splatters, carefully add the tomatoes along with their juice to the flavored oil. Cook for 1-2 minutes, stirring and breaking apart the tomatoes as they cook. Pull out the garlic cloves and discard. Continue cooking the sauce for 6-8 more minutes where it will thicken and become creamy as it cooks. Tear the fresh basil leaves into pieces and add to the sauce when cooking is nearly complete.",
+                    "name": "For the sauce, cut the tomatoes in half, then quarter the halves, and set aside. Heat 3 tablespoons of extra virgin olive oil in a large saut\u00e9 pan over medium high heat, and add three of the garlic cloves to the oil. Tilt the pan so the garlic is immersed in the oil to flavor it as the garlic cooks. Cook until the garlic becomes fragrant and begins to color, then to avoid splatters, carefully add the tomatoes along with their juice to the flavored oil. Cook for 1-2 minutes, stirring and breaking apart the tomatoes as they cook. Pull out the garlic cloves and discard. Continue cooking the sauce for 6-8 more minutes where it will thicken and become creamy as it cooks. Tear the fresh basil leaves into pieces and add to the sauce when cooking is nearly complete.",
+                    "url": "https://www.foodiecrush.com/45-best-pasta-recipes/#wprm-recipe-41269-step-0-1"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "As the pasta is cooking, heat the remaining olive oil in a large saut\u00e9 pan over medium high heat with the remaining garlic. Cook until lightly browned and remove the garlic and discard. Carefully ladle 1 to 1/2 cups of the pasta water 1/4 cup at a time into the garlic infused oil. Transfer the noodles to the pan and continue cooking the pasta for 1-2 more minutes or until the water and oil is absorbed. Divide the noodles among four plates, and top with the sauce. Garnish with more fresh basil and finish with a drizzle of extra virgin olive oil before serving. Or, toss the noodles with the sauce and serve family style",
+                    "name": "As the pasta is cooking, heat the remaining olive oil in a large saut\u00e9 pan over medium high heat with the remaining garlic. Cook until lightly browned and remove the garlic and discard. Carefully ladle 1 to 1/2 cups of the pasta water 1/4 cup at a time into the garlic infused oil. Transfer the noodles to the pan and continue cooking the pasta for 1-2 more minutes or until the water and oil is absorbed. Divide the noodles among four plates, and top with the sauce. Garnish with more fresh basil and finish with a drizzle of extra virgin olive oil before serving. Or, toss the noodles with the sauce and serve family style",
+                    "url": "https://www.foodiecrush.com/45-best-pasta-recipes/#wprm-recipe-41269-step-0-2"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.94",
+                "ratingCount": "29"
+            },
+            "recipeCategory": [
+                "Main Course"
+            ],
+            "recipeCuisine": [
+                "Italian"
+            ],
+            "keywords": "pasta, pomodoro, sauce, spaghetti",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "servingSize": "4 ounces",
+                "calories": "542 kcal",
+                "carbohydrateContent": "91 g",
+                "proteinContent": "16 g",
+                "fatContent": "12 g",
+                "saturatedFatContent": "2 g",
+                "sodiumContent": "2630 mg",
+                "fiberContent": "5 g",
+                "sugarContent": "6 g"
+            },
+            "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#recipe",
+            "isPartOf": {
+                "@id": "https://www.foodiecrush.com/45-best-pasta-recipes/#article"
+            },
+            "mainEntityOfPage": "https://www.foodiecrush.com/45-best-pasta-recipes/#webpage"
+        }
+    ]
+}

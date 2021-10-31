@@ -1,8 +1,9 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
-
+    super();
     // You'll want to attach the shadow DOM here
+    this.attachShadow({mode:'open'});
   }
 
   set data(data) {
@@ -87,7 +88,7 @@ class RecipeCard extends HTMLElement {
 
     // Here's the root element that you'll want to attach all of your other elements to
     const card = document.createElement('article');
-
+    
     // Some functions that will be helpful here:
     //    document.createElement()
     //    document.querySelector()
@@ -100,11 +101,156 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    
+    const recipeTitle = document.createElement('img');
+    recipeTitle.alt = "Recipe Title";
+    recipeTitle.src = searchForThumbnail(data);
+
+    const title = document.createElement('p');
+    const titleLink = document.createElement('a');
+    title.appendChild(titleLink);
+    title.setAttribute('class','title');
+    titleLink.setAttribute('href',getUrl(data));
+    titleLink.textContent += searchForHeadline(data);
+
+    const organization = document.createElement('p');
+    organization.setAttribute('class','organization');
+    organization.textContent += searchForOrganization(data);
+
+    const rating = document.createElement('div');
+    rating.setAttribute('class','rating');
+    const rate = document.createElement('span');
+    const star = searchForRating(data);
+    rate.textContent += star;
+    rating.appendChild(rate);
+    if(star != "No Reviews"){
+        rating.appendChild(setStar(star));
+        const count = document.createElement('span');
+        count.textContent += numberOfReview(data);
+        rating.appendChild(count);
+    };
+    
+    const time = document.createElement('time');
+    time.textContent = convertTime(searchForTime(data));
+    
+    const ingredients = document.createElement('p');
+    ingredients.setAttribute('class','ingredients');
+    ingredients.textContent += createIngredientList(findIngredients(data));
+
+    //recipeTitle.src = getUrl(data)
+    card.appendChild(recipeTitle);
+    card.appendChild(title);
+    card.appendChild(organization);
+    card.appendChild(rating);
+    card.appendChild(time);
+    card.appendChild(ingredients);
+
+    this.shadowRoot.append(styleElem,card);
+
   }
+}
+function findIngredients(data){
+    if (data.recipeIngredient) return data.recipeIngredient;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].recipeIngredient) return data['@graph'][i].recipeIngredient;
+        }
+    };
+    return null;
+}
+
+function numberOfReview(data){
+    if (data.aggregateRating) return data.aggregateRating.ratingCount;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].aggregateRating) return data['@graph'][i].aggregateRating.ratingCount;
+        }
+    };
+    return null;
+}
+function setStar(rate){
+    const number = Math.round(rate);
+    const stars = document.createElement('img');
+    switch(number){
+        case 0:
+            stars.src = 'assets/images/icons/0-star.svg';
+            break;
+        case 1: 
+            stars.src = 'assets/images/icons/1-star.svg';
+            break;
+        case 2: 
+            stars.src = 'assets/images/icons/2-star.svg';
+            break;
+        case 3: 
+            stars.src = 'assets/images/icons/3-star.svg';
+            break;
+        case 4:
+            stars.src = 'assets/images/icons/4-star.svg';
+            break;
+        case 5:
+            stars.src = 'assets/images/icons/5-star.svg';
+            break;
+    }
+    return stars;
+}
+
+function searchForRating(data){
+
+    if (data.aggregateRating) return data.aggregateRating.ratingValue;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].aggregateRating) return data['@graph'][i].aggregateRating.ratingValue;
+        }
+    };
+    return "No Reviews";
+}
+
+function searchForOrganization(data){
+    if (data.publisher) return data.publisher.name;
+    
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i]['@type'] == 'Organization') return data['@graph'][i].name;
+        }
+    };
+    return null;
+}
+
+function searchForTime(data){
+    if (data.totalTime) return data.totalTime;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].totalTime) return data['@graph'][i].totalTime;
+        }
+    };
+    return null;
+}
+
+function searchForThumbnail(data){
+    if(data.thumbnailUrl) return data.thumbnailUrl;
+    if (data.image) return data.image;
+    if (data.video) return data.video.thumbnailUrl;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].thumbnailUrl) return data['@graph'][i].thumbnailUrl;
+        }
+    };
+    return null;
+}
+
+function searchForHeadline(data){
+    if (data.name) return data.name;
+    if (data['@graph']) {
+        for (let i = 0; i < data['@graph'].length; i++) {
+          if (data['@graph'][i].headline) return data['@graph'][i].headline;
+        }
+    };
+    return null;
 }
 
 
-/*********************************************************************/
+/***
+ *******************************************************************/
 /***                       Helper Functions:                       ***/
 /***          Below are some functions I used when making          ***/
 /***     the solution, feel free to use them or not, up to you     ***/
